@@ -1,1 +1,24 @@
 // Mixins in here
+.flexIn(@dir, @just, @align) {
+    display: flex;
+    flex-direction: @dir;
+    justify-content: @just;
+    align-content: @align;
+}
+
+.customButton(@backColor, @size, @fontColor) {
+    display: flex;
+    background-color: @backColor;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @size;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @fontColor;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        background-color: darken(@backColor, 3%);
+    }
+}

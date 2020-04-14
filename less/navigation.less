@@ -1,1 +1,20 @@
 // Navigation Styles here
+nav {
+    margin: 1% 30% 0% 30%;
+    padding-bottom: 2%;
+    border-bottom: 1px dashed black;
+    .flexIn(row, center, center);
+    .links {
+        margin-top: 2%;
+        width: 80%;
+        .flexIn(row, space-evenly, center);
+        font-size: 1.6rem;
+        a {
+            color: black;
+            text-decoration: none;
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+}
